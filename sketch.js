@@ -128,7 +128,7 @@ function drawFlowfield() {
       let i = x + y * scly;
       let n = abs(flowfield[i].heading()/PI);
 
-      stroke(100 * n/12, 100, 100, 100*n);
+      stroke(100 * n/7, 100, 100, 100*n);
       circle(0, 0, sclx*n*settings.size);
 
       pop();
