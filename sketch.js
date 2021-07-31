@@ -4,12 +4,12 @@ class Settings {
   constructor() {
     this.animate = true;
     this.showDiagnostics = true;
-    this.rows = 20;
-    this.columns = 20;
+    this.rows = 17;
+    this.columns = 17;
     this.octaves = 2.8;
     this.falloff = 0.1;
-    this.xy_increment = 0.039;
-    this.z_increment = 0.0026;
+    this.xy_increment = 0.08;
+    this.z_increment = 0.01;
   }
 }
 
