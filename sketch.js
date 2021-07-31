@@ -6,6 +6,7 @@ class Settings {
     this.showDiagnostics = true;
     this.rows = 17;
     this.columns = 17;
+    this.size = 15;
     this.octaves = 2.8;
     this.falloff = 0.1;
     this.xy_increment = 0.08;
@@ -45,6 +46,7 @@ function initializeGuiControls() {
 
   gui.add(settings, 'rows', 1, 50).onFinishChange(n => setup());
   gui.add(settings, 'columns', 1, 50).onFinishChange(n => setup());
+  gui.add(settings, 'size', 1, 20);
   gui.add(settings, 'octaves', 1, 10);
   gui.add(settings, 'falloff', 0, 1);
   gui.add(settings, 'xy_increment', 0, 0.2);
@@ -126,8 +128,8 @@ function drawFlowfield() {
       let i = x + y * scly;
       let n = abs(flowfield[i].heading()/PI);
 
-      stroke(100 * n/15, 100, 100, 100*n);
-      circle(0, 0, sclx*n*20);
+      stroke(100 * n/12, 100, 100, 100*n);
+      circle(0, 0, sclx*n*settings.size);
 
       pop();
     }
