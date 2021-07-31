@@ -2,4 +2,4 @@
 
 Just some fun with grids/lines, Perlin noise and [P5](https://p5js.org) (Processing for .js)
 
-Live example at: https://jakobmollas.github.io/gridder-p5/
+Live example at: https://jakobmollas.github.io/circles-p5/
